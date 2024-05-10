@@ -16,11 +16,11 @@ body {
 .container {
   width: 100%;
   max-width: 470px;
-  min-height: 230px;
+  /* min-height: 250px; */
   margin: 0 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
   padding: 20px;
   border-radius: 4px;
   background-color: #fff;
@@ -66,7 +66,7 @@ body {
 }
 
 .image-box {
-  margin: 15px auto;
+  margin: 0 auto;
   width: 150px;
   max-height: 0;
   display: none;
@@ -94,13 +94,13 @@ body {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-3px);
+    transform: translateX(-2px);
   }
   50% {
     transform: translateX(0);
   }
   75% {
-    transform: translateX(-3px);
+    transform: translateX(-2px);
   }
   100% {
     transform: translateX(0);

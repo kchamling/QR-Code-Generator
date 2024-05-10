@@ -1,21 +1,28 @@
-const generateQrBtn = document.querySelector(".container button");
-const qrText = document.querySelector(".container input");
+const qrText = document.querySelector("#qr-text");
 const imageBox = document.querySelector(".image-box");
 const qrImage = document.querySelector("#qr");
+const generateQrBtn = document.querySelector(".container button");
 
-const createQRCode = () => {
-  if (qrText.length > 0) {
-    const URL = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrText.value}`;
+const createQRCode = (text) => {
+  if (text.length > 0) {
+    const URL =
+      "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + text;
     qrImage.src = URL;
     imageBox.classList.add("show-img");
   } else {
     qrText.classList.add("error");
-    setInterval(() => {
+    setTimeout(() => {
       qrText.classList.remove("error");
-    }, 2000);
+    }, 1000);
   }
 };
 
 generateQrBtn.addEventListener("click", () => {
-  createQRCode();
+  createQRCode(qrText.value);
+});
+
+qrText.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    createQRCode(qrText.value);
+  }
 });
