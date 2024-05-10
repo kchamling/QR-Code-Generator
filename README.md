@@ -1,4 +1,4 @@
-This is a simple web-based QR code generator that allows users to input text and generate a QR code for that text.
+#This is a simple web-based QR code generator that allows users to input text and generate a QR code for that text.
 
 Features
 Input field for entering text
