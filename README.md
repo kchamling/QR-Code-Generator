@@ -24,7 +24,7 @@ This is a simple web-based QR code generator that allows users to input text and
 
 ## Acknowledgements
 
-This QR code generator uses the [QR Server API](https://www.qr-code-generator.com/) to generate QR codes.
+This QR code generator uses the [QR Server API](https://www.qr-code-generator.com/) to generate QR codes. You can also check out the [QR Code Generator](https://kchamling.github.io/QR-Code-Generator/) by [kchamling](https://github.com/kchamling).
 
 ## License
 
